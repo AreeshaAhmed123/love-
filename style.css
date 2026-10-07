@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: #fff7f9;
+    color: #4a2732;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(255, 170, 190, .35),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 80% 70%,
+            rgba(255, 210, 220, .45),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            #fff0f4,
+            #ffe0e9
+        );
+}
+
+
+.hero-content {
+    max-width: 850px;
+}
+
+
+.small-text {
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    font-size: 12px;
+
+    color: #a95b70;
+}
+
+
+.hero h1 {
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: clamp(65px, 12vw, 140px);
+
+    color: #a92850;
+
+    margin: 20px 0;
+
+    line-height: 1;
+}
+
+
+.subtitle {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 20px;
+
+    color: #6c3a49;
+}
+
+
+button {
+
+    margin-top: 35px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    padding: 16px 32px;
+
+    background: #a92850;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 12px 30px
+        rgba(169, 40, 80, .25);
+
+    transition: .3s;
+}
+
+
+button:hover {
+
+    transform:
+        translateY(-4px)
+        scale(1.03);
+}
+
+
+/* LETTER */
+
+.letter {
+
+    padding: 100px 20px;
+}
+
+
+.card {
+
+    width: min(850px, 100%);
+
+    margin: auto;
+
+    background: white;
+
+    padding: clamp(30px, 6vw, 70px);
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 25px 70px
+        rgba(100, 30, 50, .12);
+}
+
+
+.heart {
+
+    text-align: center;
+
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+
+.card h2 {
+
+    text-align: center;
+
+    font-family: "Playfair Display", serif;
+
+    color: #8f2547;
+
+    font-size: 40px;
+
+    margin: 15px 0 40px;
+}
+
+
+.card p {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 17px;
+
+    line-height: 2;
+
+    margin-bottom: 25px;
+}
+
+
+/* APOLOGY */
+
+.apology {
+
+    padding: 30px;
+
+    margin: 40px 0;
+
+    background: #fff0f4;
+
+    border-left: 5px solid #c84d70;
+
+    border-radius: 20px;
+}
+
+
+.apology h3 {
+
+    font-family: "Playfair Display", serif;
+
+    color: #a92850;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+
+/* POETRY */
+
+.poetry {
+
+    text-align: center;
+
+    font-style: italic;
+
+    color: #83304a;
+
+    margin: 45px 0 !important;
+}
+
+
+/* BIG MESSAGE */
+
+.big-message {
+
+    text-align: center;
+
+    background: #fff0f4;
+
+    border-radius: 25px;
+
+    padding: 30px;
+
+    margin: 40px 0;
+}
+
+
+.big-message p {
+
+    margin-bottom: 10px;
+}
+
+
+/* SIGNATURE */
+
+.signature {
+
+    text-align: center;
+
+    margin-top: 50px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid #efd5dc;
+}
+
+
+.signature h3 {
+
+    font-family: "Great Vibes", cursive;
+
+    color: #a92850;
+
+    font-size: 55px;
+}
+
+
+.love-button {
+
+    display: block;
+
+    margin: 40px auto 10px;
+}
+
+
+#secret {
+
+    text-align: center;
+
+    color: #a92850;
+
+    font-weight: 600;
+
+    min-height: 30px;
+}
+
+
+/* MEMORIES */
+
+.memories {
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background: #fff0f4;
+}
+
+
+.memories h2 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 45px;
+
+    color: #8f2547;
+
+    margin: 10px;
+}
+
+
+.gallery {
+
+    width: min(1000px, 100%);
+
+    margin: 40px auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.photo {
+
+    height: 320px;
+
+    border-radius: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffd5df,
+            #f7b8ca
+        );
+
+    color: #7b3048;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 20px;
+}
+
+
+/* END */
+
+.ending {
+
+    min-height: 65vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #8e2346,
+            #bd4e70
+        );
+}
+
+
+.big-heart {
+
+    font-size: 80px;
+
+    animation: heartbeat 1.2s infinite;
+}
+
+
+.ending h2 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 55px;
+
+    margin: 15px;
+}
+
+
+.ending p {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 20px;
+}
+
+
+/* FOOTER */
+
+footer {
+
+    text-align: center;
+
+    padding: 20px;
+
+    background: #60162f;
+
+    color: #ffe7ee;
+
+    font-size: 13px;
+}
+
+
+/* FLOATING HEARTS */
+
+.floating-heart {
+
+    position: fixed;
+
+    bottom: -40px;
+
+    pointer-events: none;
+
+    z-index: 100;
+
+    animation:
+        floatUp linear forwards;
+}
+
+
+@keyframes floatUp {
+
+    to {
+
+        transform:
+            translateY(-110vh)
+            rotate(25deg);
+
+        opacity: 0;
+
+    }
+
+}
+
+
+@keyframes heartbeat {
+
+    50% {
+
+        transform:
+            scale(1.2);
+
+    }
+
+}
+
+
+/* MOBILE */
+
+@media(max-width: 700px) {
+
+    .hero h1 {
+
+        font-size: 75px;
+
+    }
+
+
+    .card h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .card p {
+
+        font-size: 15px;
+
+    }
+
+
+    .gallery {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .photo {
+
+        height: 230px;
+
+    }
+
+
+    .ending h2 {
+
+        font-size: 38px;
+
+    }
+
+}
